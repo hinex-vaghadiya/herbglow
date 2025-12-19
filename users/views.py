@@ -10,6 +10,7 @@ from users.serializers import UserSerializer
 class UserViewset(viewsets.ModelViewSet):
     queryset=User.objects.all()
     serializer_class=UserSerializer
+    # lookup_field='user_id'
 
 
 # def home(request):
