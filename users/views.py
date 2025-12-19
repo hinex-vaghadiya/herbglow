@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import request,HttpResponse
 
 from rest_framework import viewsets
-from accounts.models import User
-from accounts.serializers import UserSerializer
+from users.models import User
+from users.serializers import UserSerializer
 # Create your views here.
 
 
@@ -12,7 +12,7 @@ class UserViewset(viewsets.ModelViewSet):
     serializer_class=UserSerializer
 
 
-def home(request):
-    return HttpResponse("<h1> Hello </h1>")
+# def home(request):
+#     return HttpResponse("<h1> Hello </h1>")
 
 
